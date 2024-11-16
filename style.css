@@ -1,0 +1,59 @@
+/* Reset default margins and padding for consistent styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and borders are included in element's total width/height */
+}
+
+/* Styling for the body to center the calculator and set the background */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Takes up full height of the viewport */
+    background-color: #1c1b1b; /* Dark background to contrast with pink light */
+    font-family: Arial, sans-serif; /* Sets a clean and simple font */
+}
+
+/* Main calculator container */
+.calculator {
+    background: radial-gradient(circle, rgba(255, 192, 203, 0.3), rgba(255, 20, 147, 0.6)); /* Pink backlit effect */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 15px rgba(255, 20, 147, 0.5), 0 0 30px rgba(255, 20, 147, 0.3); /* Glowing effect */
+    width: 300px; /* Fixed width for the calculator */
+}
+
+/* Styling the display input */
+#display {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 15px; /* Space between display and buttons */
+    font-size: 1.2em; /* Makes text larger */
+    text-align: right; /* Aligns numbers to the right */
+    padding-right: 10px;
+    border: none; /* Removes default border */
+    outline: none; /* Removes outline on focus */
+    background-color: #1c1b1b; /* Matches background color */
+    color: #fff; /* White text color */
+}
+
+/* Styling calculator buttons */
+.buttons button {
+    width: 22%;
+    height: 50px;
+    margin: 1%;
+    font-size: 1.1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(145deg, #ff69b4, #ff1493); /* Gradient pink */
+    color: #fff;
+    transition: all 0.2s ease-in-out; /* Smooth transition for hover effects */
+}
+
+/* Hover effect for buttons */
+.buttons button:hover {
+    background: linear-gradient(145deg, #ff1493, #ff69b4); /* Inverts gradient on hover */
+    box-shadow: 0 0 10px rgba(255, 105, 180, 0.5); /* Adds a glowing effect */
+}
